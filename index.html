@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MyL el Juego</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>    
+	<div id="tablero">
+		<div class="row container">
+			<div class="row col-md-12"><!-- Opciones del Juego -->
+				<div class="col-xs-12 col-md-12">
+					Opciones de Juego:
+					<button id="armarCastillo" class="btn btn-primary">Armar Castillo</button>
+
+					<button id="comenzar" class="btn btn-primary">¡Comenzar Juego!</button>
+					<button id="cambiarMano" class="btn btn-primary">Cambiar Mano</button>
+					<button id="descartarMano" class="btn btn-primary">Descartar Carta</button>					
+					<button id="agregarCarta" class="btn btn-primary">Agregar Carta al Castillo</button>
+
+					<button id="indicadores" class="btn btn-primary">Indicadores</button>
+				</div>
+			</div>
+			<div class="row col-md-12"><!-- Opción Arma tu Castillo -->
+				<div class="col-xs-12 col-md-12">
+					Arma tu Castillo:
+					<div id="colecciones"></div><!-- Lista de las cartas -->
+				</div>
+			</div>
+			<div class="row col-md-12">
+				<div class="col-md-1"></div><!-- Vacio -->
+				<div class="col-md-1"><!-- Oros Pagados -->
+					<div id="oros_pagados">
+						<div class="carta bordes">Carta</div>
+					</div>
+				</div>
+				<div class="col-md-8"><!-- Ataque -->
+					<div id="ataque">
+						<div class="col-md-1 carta bordes">Carta</div>
+						<div class="col-md-1 carta bordes">Carta</div>
+						<div class="col-md-1 carta bordes">Carta</div>
+						<div class="col-md-1 carta bordes">Carta</div>
+					</div>
+				</div>
+			</div>
+			<div class="row col-md-12"><!-- Cementerio -->
+				<div class="col-md-1">
+					<div id="cementerio">
+						<div class="col-md-1 carta bordes">Carta</div>
+					</div>
+				</div>
+				<div class="col-md-1"><!-- Castillo -->
+					<div id="castillo">
+						<div class="carta bordes">Carta</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div id="defensa">
+						<div class="col-md-2 carta bordes">Carta</div>
+						<div class="col-md-2 carta bordes">Carta</div>
+						<div class="col-md-2 carta bordes">Carta</div>
+						<div class="col-md-2 carta bordes">Carta</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row col-md-12"><!-- Destierro -->
+				<div class="col-md-1">
+					<div id="destierro">
+						<div class="carta bordes">Carta</div>
+					</div>
+				</div>
+				<div class="col-md-1"><!-- Reserva de Oros -->		  	
+					<div id="reserva_de_oros">
+						<div class="col-md-1 carta bordes">Oro</div>
+					</div>	
+				</div>
+				<div class="col-md-8"><!-- Tótems -->
+					<div id="totems">
+						<div class="col-md-1 carta bordes">Carta</div>
+						<div class="col-md-1 carta bordes">Carta</div>
+						<div class="col-md-1 carta bordes">Carta</div>
+						<div class="col-md-1 carta bordes">Carta</div>
+					</div>
+				</div>
+			</div>
+			<div class="row col-md-12"><!-- Mano -->
+				<div id="mano"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Lógica del juego -->
+	<script src="index.js"></script>
+</body>
+</html>

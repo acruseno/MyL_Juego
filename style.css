@@ -1,0 +1,28 @@
+body{
+	margin: 10px 10px 10px 10px;
+	padding: 0;		
+	border: 3px solid #999;
+}
+
+#tablero{
+	/*border: 2px solid red;*/
+}
+
+.bordes{
+	border: 2px solid #999;
+}
+
+.alto_carta{
+	height: 100px;
+}
+
+.carta{
+	margin: 2px 2px 2px 2px;
+	width: 50px;
+	height: 80px;
+}
+
+.carta_coleccion{
+	float: left;
+	border: 1px solid #999;
+}
